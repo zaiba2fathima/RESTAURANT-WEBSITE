@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RoyalBites</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+  <!-- Navbar -->
+  <nav class="bg-yellow-100 shadow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <div class="flex items-center">
+          <span class="text-2xl font-bold text-yellow-700">RoyalBites</span>
+        </div>
+        <div class="hidden md:flex space-x-6">
+          <a href="#" class="text-gray-700 hover:text-yellow-600">Home</a>
+          <a href="#menu" class="text-gray-700 hover:text-yellow-600">Menu</a>
+          <a href="#testimonials" class="text-gray-700 hover:text-yellow-600">Testimonials</a>
+          <a href="#contact" class="text-gray-700 hover:text-yellow-600">Contact</a>
+        </div>
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <a href="#" class="block py-2 text-gray-700 hover:text-yellow-600">Home</a>
+      <a href="#menu" class="block py-2 text-gray-700 hover:text-yellow-600">Menu</a>
+      <a href="#testimonials" class="block py-2 text-gray-700 hover:text-yellow-600">Testimonials</a>
+      <a href="#contact" class="block py-2 text-gray-700 hover:text-yellow-600">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="bg-yellow-100 text-center py-16 px-4">
+    <h1 class="text-4xl sm:text-5xl font-bold mb-4">Welcome to RoyalBites</h1>
+    <p class="text-lg sm:text-xl mb-6">Delicious home-style meals made with love and tradition.</p>
+    <a href="#menu" class="inline-block bg-yellow-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-600 transition">Explore Our Menu</a>
+  </header>
+
+  <!-- About Section -->
+  <section class="py-12 px-4 max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-4">About Us</h2>
+    <p class="text-lg text-gray-700 leading-relaxed">At RoyalBites, we serve authentic vegetarian meals cooked with traditional Indian recipes and the warmth of home. Every plate is crafted with fresh ingredients, balanced flavors, and a dash of love to give you the comfort of homemade food away from home.</p>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="bg-gray-50 py-12 px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Today's Specials</h2>
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+      <div class="bg-white shadow rounded-xl p-6 text-center transition-transform duration-300 hover:scale-105">
+  <img src="images/paneer-butter-masala.jpg" alt="Paneer Butter Masala" class="w-full h-40 object-cover rounded-md mb-4">
+  <h3 class="text-xl font-semibold text-yellow-700 mb-2">Paneer Butter Masala</h3>
+  <p class="text-gray-700 mb-2">Creamy, rich, and mildly spiced paneer curry served with naan or rice.</p>
+  <span class="font-bold text-yellow-600">₹180</span>
+</div>
+      <div class="bg-white shadow rounded-xl p-6 text-center transition-transform duration-300 hover:scale-105">
+  <img src="images/rajma-chawal.jpg" alt="Rajma chawal" class="w-full h-40 object-cover rounded-md mb-4">
+  <h3 class="text-xl font-semibold text-yellow-700 mb-2">Rajma chawal</h3>
+  <p class="text-gray-700 mb-2">Creamy, rich, and mildly spiced paneer curry served with naan or rice.</p>
+  <span class="font-bold text-yellow-600">₹180</span>
+</div>
+      <div class="bg-white shadow rounded-xl p-6 text-center transition-transform duration-300 hover:scale-105">
+  <img src="images/Aloo-Paratha.jpg" alt="Aloo-Paratha" class="w-full h-40 object-cover rounded-md mb-4">
+  <h3 class="text-xl font-semibold text-yellow-700 mb-2">Aloo-Paratha</h3>
+  <p class="text-gray-700 mb-2">Creamy, rich, and mildly spiced paneer curry served with naan or rice.</p>
+  <span class="font-bold text-yellow-600">₹180</span>
+</div>
+      <div class="bg-white shadow rounded-xl p-6 text-center transition-transform duration-300 hover:scale-105">
+  <img src="images/thali.jpg" alt="thali" class="w-full h-40 object-cover rounded-md mb-4">
+  <h3 class="text-xl font-semibold text-yellow-700 mb-2">Thali</h3>
+  <p class="text-gray-700 mb-2">Creamy, rich, and mildly spiced paneer curry served with naan or rice.</p>
+  <span class="font-bold text-yellow-600">₹180</span>
+</div>
+       <div class="bg-white shadow rounded-xl p-6 text-center transition-transform duration-300 hover:scale-105">
+  <img src="images/masala chaas.webp" alt="masala chaas" class="w-full h-40 object-cover rounded-md mb-4">
+  <h3 class="text-xl font-semibold text-yellow-700 mb-2">Masala Chaas</h3>
+  <p class="text-gray-700 mb-2">Creamy, rich, and mildly spiced paneer curry served with naan or rice.</p>
+  <span class="font-bold text-yellow-600">₹180</span>
+</div>
+      <div class="bg-white shadow rounded-xl p-6 text-center transition-transform duration-300 hover:scale-105">
+  <img src="images/gulab-jamuns.jpg" alt="gulab-jamuns" class="w-full h-40 object-cover rounded-md mb-4">
+  <h3 class="text-xl font-semibold text-yellow-700 mb-2">Gulab-Jamuns</h3>
+  <p class="text-gray-700 mb-2">Creamy, rich, and mildly spiced paneer curry served with naan or rice.</p>
+  <span class="font-bold text-yellow-600">₹180</span>
+</div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-12 px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Customer Love</h2>
+    <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 max-w-6xl mx-auto">
+      <div class="bg-white shadow rounded-2xl p-6">
+        <p class="text-gray-700 italic">"Tastes like home! A perfect place for a wholesome vegetarian meal. Highly recommended!"</p>
+        <p class="mt-4 font-semibold text-yellow-700">– Aarav Mehta</p>
+      </div>
+      <div class="bg-white shadow rounded-2xl p-6">
+        <p class="text-gray-700 italic">"From the flavors to the hospitality – RoyalBites delivers every single time."</p>
+        <p class="mt-4 font-semibold text-yellow-700">– Priya Sharma</p>
+      </div>
+      <div class="bg-white shadow rounded-2xl p-6">
+        <p class="text-gray-700 italic">"Affordable and delicious – RoyalBites is my go-to spot for homely meals."</p>
+        <p class="mt-4 font-semibold text-yellow-700">– Rajiv Kapoor</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy Section -->
+  <section class="bg-yellow-50 py-12 px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Our Philosophy</h2>
+    <div class="max-w-4xl mx-auto text-center text-lg text-gray-700 leading-relaxed">
+      <p class="mb-4">We believe food is not just fuel—it's emotion. That's why we use only fresh, seasonal ingredients and avoid processed additives.</p>
+      <p class="mb-4">Every dish is crafted with care using traditional methods passed down through generations. No shortcuts, no compromises—just real food made with love.</p>
+      <p>Whether it's a weekday lunch or a festive thali, we aim to give you the comfort of home in every bite.</p>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-12 px-4 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+    <div class="space-y-6">
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <h3 class="font-semibold text-yellow-700 mb-2">Do you offer home delivery?</h3>
+        <p class="text-gray-700">Yes! We offer delivery through popular platforms like Zomato and Swiggy. You can also call us for direct orders.</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <h3 class="font-semibold text-yellow-700 mb-2">Do you serve Jain or Satvik food?</h3>
+        <p class="text-gray-700">Absolutely. Please let us know while ordering, and we’ll be happy to prepare a suitable meal for you.</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <h3 class="font-semibold text-yellow-700 mb-2">Can I book meals for small events or parties?</h3>
+        <p class="text-gray-700">Yes, we cater for small gatherings and offer customized thali options. Get in touch through the contact form below.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-yellow-50 py-12 px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Get In Touch</h2>
+    <div class="max-w-3xl mx-auto text-center mb-6">
+      <p class="mb-2"><strong>Address:</strong> Near Central Market, Jaipur, Rajasthan</p>
+      <p class="mb-2"><strong>Phone:</strong> +91 98765 43210</p>
+      <p class="mb-2"><strong>Email:</strong> contact@royalbites.com</p>
+      <p class="mt-4">
+        <a href="https://wa.me/919876543210" class="text-green-600 underline">Chat on WhatsApp</a> |
+        <a href="tel:+919876543210" class="text-blue-600 underline">Call Us</a>
+      </p>
+    </div>
+    <form class="bg-white p-6 rounded-2xl shadow space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400">
+      <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400">
+      <textarea placeholder="Your Message" rows="4" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+      <button type="submit" class="bg-yellow-500 text-white px-6 py-2 rounded-lg hover:bg-yellow-600 transition">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-yellow-100 text-center py-6 mt-12">
+    <p class="text-gray-700">&copy; 2025 RoyalBites. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript for mobile menu toggle -->
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    toggleBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
